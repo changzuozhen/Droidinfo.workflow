@@ -97,9 +97,9 @@ def main(wf):
             if MANU_XIAOMI == manufacturer:
                 ro_build_product = get_right_value(find(execute(build_prop_str), "ro.build.product="))
                 if 'HM' in ro_build_product:
-                    model = "红米"
+                    model = "HONGMI"
                 else:
-                    model = "小米"
+                    model = "XIAOMI"
             else:
                 model = get_right_value(find(execute(build_prop_str), "ro.product.model="))
 
