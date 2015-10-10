@@ -99,7 +99,9 @@ def main(wf):
                 if 'HM' in ro_build_product:
                     model = "红米"
                 else:
-                    model = get_right_value(find(execute(build_prop_str), "ro.product.model="))
+                    model = "小米"
+            else:
+                model = get_right_value(find(execute(build_prop_str), "ro.product.model="))
 
             print_key_value_table(info, "Model", model)
 
