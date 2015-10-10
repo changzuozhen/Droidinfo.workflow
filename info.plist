@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.tencent.benny.adinfo</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>98882769-99B7-4B18-9F49-B6A145D3E841</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>bennyhuo</string>
+	<key>description</key>
+	<string>Get android devices info.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>droidinfo</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>103</integer>
+				<key>keyword</key>
+				<string>droidinfo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Coming soon...</string>
+				<key>script</key>
+				<string>if [ -f /etc/profile ]
+then source /etc/profile
+fi
+
+if [ -f ~/.bashrc ]
+then source ~/.bashrc
+fi
+
+if [ -f ~/.bash_profile ]
+then source ~/.bash_profile
+fi
+
+if [ -f ~/.profile ]
+then source ~/.profile
+fi
+
+if [ -f ~/.bash_login ]
+then source ~/.bash_login
+fi
+
+
+python droidinfo.py {query}</string>
+				<key>subtext</key>
+				<string>Infomations of the android device attached.</string>
+				<key>title</key>
+				<string>Android devices info.</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>98882769-99B7-4B18-9F49-B6A145D3E841</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>98882769-99B7-4B18-9F49-B6A145D3E841</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
